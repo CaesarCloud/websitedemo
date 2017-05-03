@@ -16,7 +16,7 @@ deployment:
   prod:
     branch: master
     commands:
-      - aws s3 sync site s3://lab35 --delete --acl public-read
+      - aws s3 sync site s3://lab35 --delete --acl public-read --region eu-central-1
 #      - aws s3 sync site s3://demo2.d1g.nl --delete --acl public-read
 
 # grep error index.html; test $? -eq 1
